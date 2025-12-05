@@ -12,7 +12,19 @@
 
 <body>
 
+    <style>
+        .btn-green {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+        }
 
+        .btn-green:hover {
+            background-color: #27ae60;
+            color: white;
+        }
+    </style>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -46,8 +58,64 @@
         </div>
     </nav>
 
+    <div class="">
 
-    <h1>GreenWatt</h1>
+        <section id="home" class="text-center py-5"
+            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./public/thomas-reaubourg-JRUVbgJJTBM-unsplash.jpg'); background-size: cover; background-position: center; color: white; padding: 100px 0;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <h1 class="display-3 fw-bold mb-4">Reduzindo a poluição <br>e a sua conta</h1>
+                        <p class="lead mb-5">A GreenWatt colabora com fornecedores de energia renovável para que você
+                            possa escolher a fonte de energia renovável que quiser e pagar menos por isso.</p>
+                        <button class="btn btn-green btn-lg shadow">Procurar Fornecedores</button>
+                        <button class="btn btn-outline-light btn-lg ms-2">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solutions" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Benefícios</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-sun"></i>
+                            </div>
+                            <h4 class="card-title">Meio-Ambiente</h4>
+                            <p class="card-text text-muted">Utilizar fontes renováveis ajuda a combater a emissão de
+                                poluentes na atmosfera</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-battery-charging"></i>
+                            </div>
+                            <h4 class="card-title">Preço</h4>
+                            <p class="card-text text-muted">Fornecedores alternativos cobram valores muitas vezes
+                                menores do que o fornecedor padrão do seu Estado</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-battery-charging"></i>
+                            </div>
+                            <h4 class="card-title">Você no controle</h4>
+                            <p class="card-text text-muted">Tenha controle total de onde e quanto você gasta na palma da
+                                sua mão</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
