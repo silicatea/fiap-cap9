@@ -8,9 +8,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
-</head>
-
-<body>
 
     <style>
         .btn-green {
@@ -24,7 +21,23 @@
             background-color: #27ae60;
             color: white;
         }
+
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: rgba(46, 204, 113, 0.1);
+            color: #27ae60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
     </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -58,10 +71,10 @@
         </div>
     </nav>
 
-    <div class="">
+    <div class="flex-grow-1">
 
         <section id="home" class="text-center py-5"
-            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./public/thomas-reaubourg-JRUVbgJJTBM-unsplash.jpg'); background-size: cover; background-position: center; color: white; padding: 100px 0;">
+            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; padding: 100px 0;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -83,39 +96,76 @@
 
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm p-4">
-                            <div class="feature-icon">
-                                <i class="bi bi-sun"></i>
+                        <div class="d-flex align-items-start shadow-sm border-0 p-4 h-100">
+                            <div class="feature-icon me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-sun" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                                </svg>
                             </div>
-                            <h4 class="card-title">Meio-Ambiente</h4>
-                            <p class="card-text text-muted">Utilizar fontes renováveis ajuda a combater a emissão de
-                                poluentes na atmosfera</p>
+                            <div>
+                                <h4 class="card-title">Meio-Ambiente</h4>
+                                <p class="card-text text-muted">Utilizar fontes renováveis ajuda a combater a emissão de
+                                    poluentes na atmosfera</p>
+                                </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm p-4">
-                            <div class="feature-icon">
-                                <i class="bi bi-battery-charging"></i>
+                        <div class="d-flex align-items-start shadow-sm border-0 p-4 h-100">
+                            <div class="feature-icon me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-battery-charging" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z" />
+                                    <path
+                                        d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
+                                    <path
+                                        d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                                    <path
+                                        d="M12 10h-1.783l1.542-1.639q.146-.156.241-.34zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646M16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8" />
+                                </svg>
                             </div>
-                            <h4 class="card-title">Preço</h4>
-                            <p class="card-text text-muted">Fornecedores alternativos cobram valores muitas vezes
-                                menores do que o fornecedor padrão do seu Estado</p>
+                            <div>
+
+                                <h4 class="card-title">Preço</h4>
+                                <p class="card-text text-muted">Fornecedores alternativos cobram valores muitas vezes
+                                    menores do que o fornecedor padrão do seu Estado</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm p-4">
-                            <div class="feature-icon">
-                                <i class="bi bi-battery-charging"></i>
+
+                        <div class="d-flex align-items-start shadow-sm border-0 p-4 h-100">
+                            <div class="feature-icon me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-file-spreadsheet" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v4h10V2a1 1 0 0 0-1-1zm9 6h-3v2h3zm0 3h-3v2h3zm0 3h-3v2h2a1 1 0 0 0 1-1zm-4 2v-2H6v2zm-4 0v-2H3v1a1 1 0 0 0 1 1zm-2-3h2v-2H3zm0-3h2V7H3zm3-2v2h3V7zm3 3H6v2h3z" />
+                                </svg>
                             </div>
-                            <h4 class="card-title">Você no controle</h4>
-                            <p class="card-text text-muted">Tenha controle total de onde e quanto você gasta na palma da
-                                sua mão</p>
+                            <div>
+                                <h4 class="card-title">Você no controle</h4>
+                                <p class="card-text text-muted">Tenha controle total de onde e quanto você gasta na
+                                    palma da
+                                    sua mão</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto border-top d-flex flex-row justify-content-between">
+        <div class="text-center p-3 text-muted">
+            © 2025 GreenWatt:
+            <a class="text-success text-decoration-none" href="#">greenwatt.com</a>
+        </div>
+
+        <div class="text-center p-3 text-muted">Feito por Max Santos - ADS FIAP</div>
+    </footer>
+
 </body>
 
 </html>
